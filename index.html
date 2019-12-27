@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <title>2048 3D</title>
+    <meta charset="utf-8">
+    <title>2048 3D</title>
 
     <meta name="description" content="2048 3D is a puzzle game in which you have to slide the number boxes to make 2048 number. This game is an advanced version of 2048 since it has a 3D cube board instead of a regular 2D square board">
     <meta name="keywords" content="play2048.co, 2048 cupcakes, 2048 8x8, 2048 hacked, 2048 online, 2048 pokemon, 2048 dear jane, 2048 extension, 2048 ai, 2048 hexagon elimination, play 2048, puzzle games, 2048 god mode, puzzle games for kids, puzzle games for adults, puzzle game 2020, 2020">
@@ -29,281 +30,282 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://2048-hexagon.netlify.com">
     <meta property="og:image" content="img/logo.png">
-	
+
     <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
+
 <body>
-  <div class="container">
-    <div class="heading">
-      <h1 class="title">2048 3D</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
-    </div>
-    <p class="game-intro">Join the numbers and get to the <strong>2048 block !</strong></p>
-
-    <div class="game-container">
-      <div class="game-message">
-        <p></p>
-        <div class="lower">
-	        <a class="keep-playing-button">Keep going</a>
-          <a class="retry-button">Try again</a>
+    <div class="container">
+        <div class="heading">
+            <h1 class="title">2048 3D</h1>
+            <div class="scores-container">
+                <div class="score-container">0</div>
+                <div class="best-container">0</div>
+            </div>
         </div>
-      </div>
+        <p class="game-intro">Join the numbers and get to the <strong>2048 block !</strong></p>
 
-      <div class="grid-container">
-        <div class="grid-inner">
-          <div class="cube cube-1-1-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-1-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-1-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-2-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-2-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-2-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-3-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-3-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-1-3-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-1-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-1-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-1-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-2-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-2-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-2-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-3-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-3-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-2-3-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-1-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-1-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-1-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-2-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-2-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-2-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-3-1">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-3-2">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="cube cube-3-3-3">
-            <div class="cube-face cube-face-u"></div>
-            <div class="cube-face cube-face-d"></div>
-            <div class="cube-face cube-face-l"></div>
-            <div class="cube-face cube-face-r"></div>
-            <div class="cube-face cube-face-f"></div>
-            <div class="cube-face cube-face-b"></div>
-          </div>
-          <div class="tile-container">
-          </div>
+        <div class="game-container">
+            <div class="game-message">
+                <p></p>
+                <div class="lower">
+                    <a class="keep-playing-button">Keep going</a>
+                    <a class="retry-button">Try again</a>
+                </div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-inner">
+                    <div class="cube cube-1-1-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-1-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-1-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-2-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-2-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-2-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-3-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-3-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-1-3-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-1-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-1-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-1-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-2-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-2-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-2-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-3-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-3-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-2-3-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-1-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-1-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-1-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-2-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-2-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-2-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-3-1">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-3-2">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="cube cube-3-3-3">
+                        <div class="cube-face cube-face-u"></div>
+                        <div class="cube-face cube-face-d"></div>
+                        <div class="cube-face cube-face-l"></div>
+                        <div class="cube-face cube-face-r"></div>
+                        <div class="cube-face cube-face-f"></div>
+                        <div class="cube-face cube-face-b"></div>
+                    </div>
+                    <div class="tile-container">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="touch-buttons">
-      <div class="button-group">
-        <div class="touch-button tap" data-type="move" data-value="4">F</div>
-        <div class="touch-button tap" data-type="move" data-value="5">B</div>
-        <div class="touch-button tap" data-type="rotate">Rotate</div>
-      </div>
-      <div class="button-group">
-        <div class="touch-button long-tap">1</div>
-        <div class="touch-button long-tap">2</div>
-        <div class="touch-button long-tap">3</div>
-      </div>
-    </div>
+        <div class="touch-buttons">
+            <div class="button-group">
+                <div class="touch-button tap" data-type="move" data-value="4">F</div>
+                <div class="touch-button tap" data-type="move" data-value="5">B</div>
+                <div class="touch-button tap" data-type="rotate">Rotate</div>
+            </div>
+            <div class="button-group">
+                <div class="touch-button long-tap">1</div>
+                <div class="touch-button long-tap">2</div>
+                <div class="touch-button long-tap">3</div>
+            </div>
+        </div>
 
-    <p class="game-explanation">
-      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles, any useless letter key to rotate, hold 1, 2 or 3 to hidden layers,. When two tiles with the same number touch, they <strong>merge into one!</strong>
-    <br />
-    <br />
-      <strong class="important">Special tiles:</strong>There are 3 'bonus' tiles, '4', '64' and '256'. They have different colors from normal tiles and can only be merged with same one. Both tiles will disappear after being merged.
-It's not a really bonus tile. I added them just to increase difficulty. Since the 3d version has more tiles and more directions, it's much easier than the normal version if there's no traverse. Do you have any good idea?</strong>
-    </p>
-    <hr>
-  </div>
-  <script src="js/animframe_polyfill.js"></script>
-  <script src="js/keyboard_input_manager.js"></script>
-  <script src="js/html_actuator.js"></script>
-  <script src="js/grid.js"></script>
-  <script src="js/tile.js"></script>
-  <script src="js/local_score_manager.js"></script>
-  <script src="js/game_manager.js"></script>
-  <script src="js/application.js"></script>
+        <p class="game-explanation">
+            <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles, any useless letter key to rotate, hold 1, 2 or 3 to hidden layers,. When two tiles with the same number touch, they <strong>merge into one!</strong>
+            <br />
+            <br />
+            <strong class="important">Special tiles:</strong>There are 3 'bonus' tiles, '4', '64' and '256'. They have different colors from normal tiles and can only be merged with same one. Both tiles will disappear after being merged. It's not a really bonus tile. I added them just to increase difficulty. Since the 3d version has more tiles and more directions, it's much easier than the normal version if there's no traverse. Do you have any good idea?</strong>
+        </p>
+        <hr>
+    </div>
+    <script src="js/animframe_polyfill.js"></script>
+    <script src="js/keyboard_input_manager.js"></script>
+    <script src="js/html_actuator.js"></script>
+    <script src="js/grid.js"></script>
+    <script src="js/tile.js"></script>
+    <script src="js/local_score_manager.js"></script>
+    <script src="js/game_manager.js"></script>
+    <script src="js/application.js"></script>
 </body>
+
 </html>
