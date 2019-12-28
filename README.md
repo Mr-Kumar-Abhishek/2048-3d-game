@@ -1,7 +1,7 @@
-# 3D 2048
+# 2048 cubix
 Based on [Gabriele Cirulli's 2048](http://gabrielecirulli.github.io/2048/).
 
-Made just for fun. [Play it here!](http://baiqiang.github.io/2048-3d/)
+Made just for fun. [Play it here!](https://2048-cubix.netlify.com/)
 
 ## Changes from regular game
 
