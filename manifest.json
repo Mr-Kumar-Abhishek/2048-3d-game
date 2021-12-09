@@ -6,8 +6,8 @@
     "display" : "standalone",
     "orientation" : "portrait-primary",
     "lang" : "English",
-    "theme_color": "#154a1f",
-    "background_color": "#154a1f",
+    "theme_color": "#d9c8ad",
+    "background_color": "#d9c8ad",
     "icons" : [{
       "src": "img/logo-128.png",
       "sizes": "128x128",
